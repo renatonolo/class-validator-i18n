@@ -1,0 +1,31 @@
+{
+  "name": "nestjs-class-validator-i18n",
+  "version": "1.0.0",
+  "description": "An internationalization for class-validator from nestjs.",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf lib && tsc",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "author": "Renato N. Lourenço",
+  "license": "ISC",
+  "peerDependencies": {
+    "class-validator": "^0.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "class-validator": "^0.14.0",
+    "eslint": "^8.43.0",
+    "prettier": "^2.8.8",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.0.4",
+    "validator": "^13.9.0"
+  }
+}
