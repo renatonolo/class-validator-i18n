@@ -1,14 +1,15 @@
 {
-  "name": "nestjs-class-validator-i18n",
+  "name": "class-validator-i18n",
   "version": "1.0.0",
-  "description": "An internationalization for class-validator from nestjs.",
-  "main": "lib/index.js",
+  "description": "An internationalization for class-validator.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf lib && tsc",
+    "build": "rimraf dist && tsc",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write \"src/**/*.ts\""
   },
