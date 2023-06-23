@@ -1,7 +1,8 @@
 import { ValidationOptions, ValidateNested as _ValidateNested } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function ValidateNested(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _ValidateNested(translate(Translations.validateNested, validationOptions));
+  const translation = getTranslation();
+  return _ValidateNested(translate(translation.validateNested, validationOptions));
 }

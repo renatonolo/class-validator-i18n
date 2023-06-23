@@ -1,7 +1,8 @@
 import { ValidationOptions, IsString as _IsString } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsString(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsString(translate(Translations.isString, validationOptions));
+  const translation = getTranslation();
+  return _IsString(translate(translation.isString, validationOptions));
 }

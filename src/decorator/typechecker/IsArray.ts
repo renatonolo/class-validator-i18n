@@ -1,8 +1,8 @@
-import { IsArray as _IsArray } from 'class-validator';
-import { ValidationOptions } from 'class-validator';
+import { ValidationOptions, IsArray as _IsArray } from 'class-validator';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
-import { Translations } from '../../translations';
 
 export function IsArray(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsArray(translate(Translations.isArray, validationOptions));
+  const translation = getTranslation();
+  return _IsArray(translate(translation.isArray, validationOptions));
 }

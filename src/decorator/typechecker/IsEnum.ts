@@ -1,7 +1,8 @@
 import { ValidationOptions, IsEnum as _IsEnum } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsEnum(entity: object, validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsEnum(entity, translate(Translations.isEnum, validationOptions));
+  const translation = getTranslation();
+  return _IsEnum(entity, translate(translation.isEnum, validationOptions));
 }

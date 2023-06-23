@@ -1,7 +1,8 @@
 import { ValidationOptions, IsObject as _IsObject } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsObject(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsObject(translate(Translations.isObject, validationOptions));
+  const translation = getTranslation();
+  return _IsObject(translate(translation.isObject, validationOptions));
 }

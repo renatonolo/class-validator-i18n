@@ -1,7 +1,8 @@
 import { ValidationOptions, Min as _Min } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function Min(minValue: number, validationOptions?: ValidationOptions): PropertyDecorator {
-  return _Min(minValue, translate(Translations.min, validationOptions));
+  const translation = getTranslation();
+  return _Min(minValue, translate(translation.min, validationOptions));
 }

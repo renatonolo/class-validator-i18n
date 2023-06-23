@@ -1,7 +1,8 @@
 import { ValidationOptions, IsDate as _IsDate } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsDate(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsDate(translate(Translations.isDate, validationOptions));
+  const translation = getTranslation();
+  return _IsDate(translate(translation.isDate, validationOptions));
 }

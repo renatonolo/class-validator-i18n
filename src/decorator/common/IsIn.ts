@@ -1,7 +1,8 @@
 import { ValidationOptions, IsIn as _IsIn } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsIn(values: readonly any[], validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsIn(values, translate(Translations.isIn, validationOptions));
+  const translation = getTranslation();
+  return _IsIn(values, translate(translation.isIn, validationOptions));
 }

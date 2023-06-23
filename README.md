@@ -22,13 +22,10 @@ You can check the translations on table below.
 | Max            | :white_check_mark: |
 | MaxLength      | :white_check_mark: |
 | Min            | :white_check_mark: |
-| ValidateIf     | :x:                |
 | ValidateNested | :white_check_mark: |
-| IsOptional     | :x:                |
 | IsUUID         | :white_check_mark: |
 | ArrayMinSize   | :white_check_mark: |
 | IsDateString   | :white_check_mark: |
 | IsIn           | :white_check_mark: |
 | IsUrl          | :white_check_mark: |
-| validate       | :x:                |
 | IsDecimal      | :white_check_mark: |

@@ -1,7 +1,8 @@
 import { ValidationOptions, IsInt as _IsInt } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsInt(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsInt(translate(Translations.isInt, validationOptions));
+  const translation = getTranslation();
+  return _IsInt(translate(translation.isInt, validationOptions));
 }

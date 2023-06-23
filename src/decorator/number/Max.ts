@@ -1,7 +1,8 @@
 import { ValidationOptions, Max as _Max } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function Max(maxValue: number, validationOptions?: ValidationOptions): PropertyDecorator {
-  return _Max(maxValue, translate(Translations.max, validationOptions));
+  const translation = getTranslation();
+  return _Max(maxValue, translate(translation.max, validationOptions));
 }

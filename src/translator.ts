@@ -1,7 +1,6 @@
 import { ValidationOptions } from 'class-validator';
-import { Translations } from './translations';
 
-export function translate(which: Translations, validationOptions?: ValidationOptions): ValidationOptions {
+export function translate(which: string, validationOptions?: ValidationOptions): ValidationOptions {
   if (validationOptions?.message) return validationOptions;
 
   const message = () => {

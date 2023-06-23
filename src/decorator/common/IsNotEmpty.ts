@@ -1,7 +1,8 @@
 import { ValidationOptions, IsNotEmpty as _IsNotEmpty } from 'class-validator';
-import { Translations } from '../../translations';
+import { getTranslation } from '../../i18n';
 import { translate } from '../../translator';
 
 export function IsNotEmpty(validationOptions?: ValidationOptions): PropertyDecorator {
-  return _IsNotEmpty(translate(Translations.isNotEmpty, validationOptions));
+  const translation = getTranslation();
+  return _IsNotEmpty(translate(translation.isNotEmpty, validationOptions));
 }
