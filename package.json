@@ -5,7 +5,17 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "keywords": [
+    "i18n",
+    "translation",
+    "class-validator",
+    "class-validator-i18n",
+    "validator",
+    "TypeScript"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +24,11 @@
     "format": "prettier --write \"src/**/*.ts\""
   },
   "author": "Renato N. Lourenço",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatonolo/class-validator-i18n"
+  },
   "peerDependencies": {
     "class-validator": "^0.14.0"
   },
