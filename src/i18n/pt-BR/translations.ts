@@ -22,7 +22,12 @@ export const translations: Translations = {
   max: '$property não pode ser maior que $constraint1',
   min: '$property não pode ser menor que $constraint1',
   // Array
+  arrayContains: '$property deve conter os valores $constraint1',
+  arrayMaxSize: '$property deve conter no máximo $constraint1 elemento(s)',
   arrayMinSize: '$property deve conter pelo menos $constraint1 elemento(s)',
+  arrayNotContains: '$property não deve conter os valores $constraint1',
+  arrayNotEmpty: '$property não deve ser vazio',
+  arrayUnique: 'Todos os $property devem ser únicos',
   // Common
   isNotEmpty: '$property não deve ser vazio',
   validateNested: 'propriedade aninhada $property deve ser um objeto ou uma lista',

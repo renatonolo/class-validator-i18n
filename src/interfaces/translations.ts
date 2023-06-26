@@ -23,7 +23,12 @@ export interface Translations {
   min: string;
 
   // Array
+  arrayContains: string;
+  arrayMaxSize: string;
   arrayMinSize: string;
+  arrayNotContains: string;
+  arrayNotEmpty: string;
+  arrayUnique: string;
 
   // Common
   isNotEmpty: string;
