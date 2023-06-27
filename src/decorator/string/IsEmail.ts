@@ -8,5 +8,5 @@ export function IsEmail(
   validationOptions?: ValidationOptions
 ): PropertyDecorator {
   const translation = getTranslation();
-  return _IsEmail(options, translate(translation.isEmail, validationOptions));
+  return _IsEmail(options, translate(translation, 'isEmail', validationOptions));
 }

@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsBoolean(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsBoolean(translate(translation.isBoolean, validationOptions));
+  return _IsBoolean(translate(translation, 'isBoolean', validationOptions));
 }

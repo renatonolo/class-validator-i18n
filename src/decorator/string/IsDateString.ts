@@ -8,5 +8,5 @@ export function IsDateString(
   validationOptions?: ValidationOptions
 ): PropertyDecorator {
   const translation = getTranslation();
-  return _IsDateString(options, translate(translation.isDateString, validationOptions));
+  return _IsDateString(options, translate(translation, 'isDateString', validationOptions));
 }

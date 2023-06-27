@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsString(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsString(translate(translation.isString, validationOptions));
+  return _IsString(translate(translation, 'isString', validationOptions));
 }

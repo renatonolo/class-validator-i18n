@@ -5,5 +5,5 @@ import { translate } from '../../translator';
 
 export function IsUrl(options?: ValidatorJS.IsURLOptions, validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsUrl(options, translate(translation.isUrl, validationOptions));
+  return _IsUrl(options, translate(translation, 'isUrl', validationOptions));
 }

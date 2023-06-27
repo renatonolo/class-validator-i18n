@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsEnum(entity: object, validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsEnum(entity, translate(translation.isEnum, validationOptions));
+  return _IsEnum(entity, translate(translation, 'isEnum', validationOptions));
 }
