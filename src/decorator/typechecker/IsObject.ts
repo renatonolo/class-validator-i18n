@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsObject(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsObject(translate(translation.isObject, validationOptions));
+  return _IsObject(translate(translation, 'isObject', validationOptions));
 }

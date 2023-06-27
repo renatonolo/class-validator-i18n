@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsDate(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsDate(translate(translation.isDate, validationOptions));
+  return _IsDate(translate(translation, 'isDate', validationOptions));
 }

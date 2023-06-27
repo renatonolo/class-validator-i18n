@@ -8,5 +8,5 @@ export function IsDecimal(
   validationOptions?: ValidationOptions
 ): PropertyDecorator {
   const translation = getTranslation();
-  return _IsDecimal(options, translate(translation.isDecimal, validationOptions));
+  return _IsDecimal(options, translate(translation, 'isDecimal', validationOptions));
 }

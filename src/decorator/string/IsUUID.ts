@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsUUID(version?: UUIDVersion, validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsUUID(version, translate(translation.isUUID, validationOptions));
+  return _IsUUID(version, translate(translation, 'isUUID', validationOptions));
 }

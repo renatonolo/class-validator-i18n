@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsArray(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsArray(translate(translation.isArray, validationOptions));
+  return _IsArray(translate(translation, 'isArray', validationOptions));
 }

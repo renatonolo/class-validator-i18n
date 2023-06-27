@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function ArrayMinSize(min: number, validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _ArrayMinSize(min, translate(translation.arrayMinSize, validationOptions));
+  return _ArrayMinSize(min, translate(translation, 'arrayMinSize', validationOptions));
 }

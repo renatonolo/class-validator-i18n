@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function MaxLength(max: number, validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _MaxLength(max, translate(translation.maxLength, validationOptions));
+  return _MaxLength(max, translate(translation, 'maxLength', validationOptions));
 }
