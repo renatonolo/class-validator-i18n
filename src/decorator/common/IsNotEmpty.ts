@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function IsNotEmpty(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _IsNotEmpty(translate(translation.isNotEmpty, validationOptions));
+  return _IsNotEmpty(translate(translation, 'isNotEmpty', validationOptions));
 }

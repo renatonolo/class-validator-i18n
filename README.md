@@ -6,34 +6,15 @@ Class-validator-i18n is a translator to class-validator library.
 
 ## Decorators already translated
 
-You can check the translations on table below.
+You can check the translated decorators at the links below.
 
-| Decorator        |
-| ---------------- |
-| IsArray          |
-| IsDate           |
-| IsEmail          |
-| IsEnum           |
-| IsInt            |
-| IsNotEmpty       |
-| IsNumber         |
-| IsString         |
-| Length           |
-| Max              |
-| MaxLength        |
-| Min              |
-| ValidateNested   |
-| IsUUID           |
-| ArrayContains    |
-| ArrayMaxSize     |
-| ArrayMinSize     |
-| ArrayNotContains |
-| ArrayNotEmpty    |
-| ArrayUnique      |
-| IsDateString     |
-| IsIn             |
-| IsUrl            |
-| IsDecimal        |
+- [Array decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/array/index.ts)
+- [Common decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/common/index.ts)
+- [Date decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/date/index.ts)
+- [Number decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/number/index.ts)
+- [Object decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/object/index.ts)
+- [String decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/string/index.ts)
+- [Type checker decorators](https://github.com/renatonolo/class-validator-i18n/blob/master/src/decorator/typechecker/index.ts)
 
 ## How to use
 

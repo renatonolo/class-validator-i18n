@@ -4,5 +4,5 @@ import { translate } from '../../translator';
 
 export function ValidateNested(validationOptions?: ValidationOptions): PropertyDecorator {
   const translation = getTranslation();
-  return _ValidateNested(translate(translation.validateNested, validationOptions));
+  return _ValidateNested(translate(translation, 'validateNested', validationOptions));
 }
