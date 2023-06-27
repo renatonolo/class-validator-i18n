@@ -1,6 +1,6 @@
 {
   "name": "class-validator-i18n",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An internationalization for class-validator.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
